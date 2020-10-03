@@ -19,7 +19,7 @@ lightButton.onclick = () => {
     body.classList.replace('dark', 'light');
     localStorage.setItem('theme', 'light');
 };
-solarButton.onclick = () => {
+/*solarButton.onclick = () => {
     if(body.classList.contains('solar')){
         body.classList.remove('solar');
         solarButton.style.cssText = `
@@ -31,4 +31,4 @@ solarButton.onclick = () => {
         body.classList.add('solar');
         localStorage.setItem('isSolar', true);
     }
-};
+}; */

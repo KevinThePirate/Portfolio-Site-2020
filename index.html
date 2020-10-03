@@ -6,6 +6,7 @@
     <link rel="stylesheet" type="text/css" href="css/bootstrap-4.5.2-dist/css/bootstrap.css">
     <link rel="stylesheet" href="css/style.css">
     <script src="js/script.js" defer></script>
+    <script src='css/bootstrap-4.5.2-dist/js/bootstrap.js' defer></script>
     <title></title>
 </head>
 
@@ -21,14 +22,14 @@
     <nav class="navbar navbar-left">
       <ul class="navbar-style ">
         <li><a href="#">Home</a></li>
-        <li><a href="#about">About</a></li> 
+        <li>  <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide-to="0">About</a></li> 
         </ul>
       </li>
       </ul>
   </nav>
   <nav class="navbar navbar-right">
     <ul class="navbar-style">
-      <li><a href="#projects">Projects</a></li>
+      <li>  <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide-to="1">Projects</a></li> 
           
           <li class="nav-item has-dropdown text-center">
         <a href="#">Theme</a>
@@ -47,15 +48,26 @@
 </div>
 <div id="blinder" class="row fixed-top"></div>
 
-<section class="row action-area" id="about">
-    <div class="left col"></div>
-    <div class="right col"></div>
-  </section>
+<div id="carouselExampleControls" class="carousel slide" data-ride="carousel" data-interval="false">
+  <div class="carousel-inner">
+    <div class="carousel-item active" id="first">
+      <section class="row action-area" id="about">
+        <div class="left col"></div>
+        <div class="right col"></div>
+      </section>
+    </div>
+    <div class="carousel-item" id="second">
+      <section class="row action-area" id="projects">
+        <div class="left col"></div>
+        <div class="right col"></div>
+      </section>
+    </div>
+  </div>
+</div>
 
-  <section class="row action-area" id="projects">
-    <div class="left col"></div>
-    <div class="right col"></div>
-  </section>
+
+
+
 
     <!-- <div class="container"></div>
     <main>
