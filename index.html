@@ -21,15 +21,15 @@
     <div id="navContainer">
     <nav class="navbar navbar-left">
       <ul class="navbar-style ">
-        <li><a href="#">Home</a></li>
-        <li>  <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide-to="0">About</a></li> 
+        <li><a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide-to="0">Home</a></li>
+        <li>  <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide-to="1">About</a></li> 
         </ul>
       </li>
       </ul>
   </nav>
   <nav class="navbar navbar-right">
     <ul class="navbar-style">
-      <li>  <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide-to="1">Projects</a></li> 
+      <li>  <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide-to="2">Projects</a></li> 
           
           <li class="nav-item has-dropdown text-center">
         <a href="#">Theme</a>
@@ -46,11 +46,16 @@
     </ul>
   </nav>
 </div>
-<div id="blinder" class="row fixed-top"></div>
+<!--<div id="blinder" class="row fixed-top"></div>-->
 
 <div id="carouselExampleControls" class="carousel slide" data-ride="carousel" data-interval="false">
   <div class="carousel-inner">
-    <div class="carousel-item active" id="first">
+    <div class="carousel-item active" id="blinder-test">
+        <div id="start-button" class="shadow-pop-tr">
+          <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide-to="1">About</a>
+        </div>
+    </div>
+    <div class="carousel-item" id="first">
       <section class="row action-area" id="about">
         <div class="left col"></div>
         <div class="right col"></div>
