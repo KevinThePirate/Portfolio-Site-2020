@@ -50,7 +50,7 @@
 
 <div id="carouselExampleControls" class="carousel slide" data-ride="carousel" data-interval="false">
   <div class="carousel-inner">
-    <div class="carousel-item active" id="blinder-test">
+    <div class="carousel-item" id="blinder-test">
         <div id="start-button" class="shadow-pop-tr">
           <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide-to="1">About</a>
         </div>
@@ -61,10 +61,21 @@
         <div class="right col"></div>
       </section>
     </div>
-    <div class="carousel-item" id="second">
-      <section class="row action-area" id="projects">
-        <div class="left col"></div>
+    <div class="carousel-item active" id="second">
+      <section class="row action-area projects" id="projects">
+        
+        <div class="left col">
+          <button onclick="flip()" style="margin-top: 100px;">Flip</button>
+        </div>
+        <div class="right col">
+        </div>
+      
+      </section>
+      <section class="row action-area projects" id="projects-back">
+        
+        <div class="left col"><button onclick="flip()" style="margin-top: 100px;">Flip</button></div>
         <div class="right col"></div>
+      
       </section>
     </div>
   </div>

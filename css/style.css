@@ -1,8 +1,4 @@
-/*.carousel-item{
-    height: 100vh;
-    width: 100%;
-    border: 100px solid black;
-}
+/*
 #first{
     background-color: red;
 }
@@ -12,18 +8,34 @@
 #third{
     background-color: blue;
 }*/
-.carousel{
-    position: absolute;
-    left: 15px;
-    width: 100%;
-    margin-top: -66px;
-    z-index: -2;
+#second{
+    perspective: 1000;
+    transform-style: preserve-3d;
+  transition: all 0.3s ease-in-out;
 }
-*{transition: background 500ms ease-in-out, color 1000ms ease-in-out;}
+.flipping {
+    transform: rotateX(180deg);
+  }
+  .flip-back{
+    transform: rotateX(0deg); 
+}
+#projects {
+    position: absolute;
+  }
+  #projects, #projects-back {
+    backface-visibility: hidden;
+  }
+  #projects-back{
+      transform: rotateX(180deg);
+  }
+*{
+    transition: background 500ms ease-in-out, color 1000ms ease-in-out;
+
+}
 body{
     font-family: lato, sans-serif;
     /*color: var(--text);*/
-    background: var(--bg);
+    background: linear-gradient(to right, var(--section3), red);
     width: 100%;
 }
 ul{
@@ -228,7 +240,6 @@ header{
 }
 .action-area{
  z-index: -2;
- margin-top: 5px;
 }
 .action-area > * {
     height: 60vh;
@@ -245,10 +256,10 @@ header{
 #about .right{
     background-color: var(--section2);
 }
-#projects .left{
+.projects .left{
     background-color: var(--section3);
 }
-#projects .right{
+.projects .right{
     background-color: red;
 }
 #about{
@@ -259,7 +270,6 @@ header{
 }
 .carousel{
     position: absolute;
-    left: 15px;
     width: 100%;
     margin-top: -66px;
     z-index: -2;
@@ -324,3 +334,6 @@ align-items: center;
 justify-content: center;
 color: var(--button);
 }  
+#front, #back{
+    width: 100%;
+}

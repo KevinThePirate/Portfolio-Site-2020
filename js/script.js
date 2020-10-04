@@ -32,3 +32,14 @@ lightButton.onclick = () => {
         localStorage.setItem('isSolar', true);
     }
 }; */
+let counter = 2;
+        const flip = () => {
+            const card = document.getElementById('second');
+            if(counter % 2 == 0){
+                card.classList = 'flipping';
+            }else{
+                card.classList = null;
+                card.classList = 'flip-back';
+            }
+            counter++
+        }
