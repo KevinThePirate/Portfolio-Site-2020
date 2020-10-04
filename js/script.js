@@ -26,7 +26,7 @@ lightButton.onclick = () => {
         --bg-solar: var(--yellow);
         `
         solarButton.innerText = 'solarize';
-        localStorage.removeItem('isSolar');
+    localStorage.removeItem('isSolar');
     }else{
         body.classList.add('solar');
         localStorage.setItem('isSolar', true);
@@ -36,10 +36,12 @@ let counter = 2;
         const flip = () => {
             const card = document.getElementById('second');
             if(counter % 2 == 0){
-                card.classList = 'flipping';
+                card.classList.remove('flip-back');
+                card.classList.add('flipping');
             }else{
-                card.classList = null;
-                card.classList = 'flip-back';
+                card.classList.remove('flipping');
+                card.classList.add('flip-back');
+
             }
             counter++
         }
