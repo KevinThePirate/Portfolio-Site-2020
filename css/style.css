@@ -206,26 +206,11 @@ header{
     --gray5: #005368;
     --gray6: #003d4c;
 }
-
-@keyframes color-rotate {
-    from {
-        filter: hue-rotate(0deg);
-    }
-    to {
-        filter: hue-rotate(360deg);
-    }
-}
-
 .logo{
     border: 2px solid var(--text);
     width: 150px;
     height: 150px;
   border-radius:100%;
-}
-.logo:hover {
-    animation: color-rotate 1s;
-    animation-iteration-count: infinite; 
-    animation-direction: alternate;
 }
 .left, .right{
     display: block;
@@ -247,6 +232,7 @@ header{
 }
 #about .left{
     background-color: var(--section1);
+    margin-top: 15px;
 }
 #about .right{
     background-color: var(--section2);
@@ -333,4 +319,25 @@ color: var(--button);
 }  
 #front, #back{
     width: 100%;
+}
+#basic-info-area{
+    padding-top: 50px;
+    text-align: center;
+}
+#basic-info-area p{
+    margin: 20px;
+    text-align: justify;
+}
+#logo-area{
+    font-size: larger;
+}
+#logo-area > * {
+    padding: 2px;
+    text-decoration: none;
+}
+#skills{
+    margin-top: 50px;
+}
+#work-area{
+    text-align: justify;
 }
