@@ -5460,19 +5460,6 @@ a.badge-dark:focus, a.badge-dark.focus {
     animation: none;
   }
 }
-
-.media {
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-align: start;
-  align-items: flex-start;
-}
-
-.media-body {
-  -ms-flex: 1;
-  flex: 1;
-}
-
 .list-group {
   display: -ms-flexbox;
   display: flex;

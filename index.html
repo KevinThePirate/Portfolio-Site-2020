@@ -47,14 +47,20 @@
 
 <div id="carouselExampleControls" class="carousel slide w-100" data-ride="carousel" data-interval="false">
   <div class="carousel-inner">
-    <div class="carousel-item" id="blinder-test">
-        <div id="start-button" class="shadow-pop-tr">
-          <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide-to="1">About</a>
+    <div class="carousel-item active" id="blinder-test">
+      <div class="row">
+        <div class="shadow-pop-tr start-button">
+          <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide-to="1">Web Development</a>
         </div>
+        <div class="shadow-pop-tr start-button">
+          <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide-to="1" onclick="flip()">Animation/Video</a>
+        </div>
+      </div>
+        
     </div>
-    <div class="carousel-item active" id="first">
+    <div class="carousel-item" id="first">
       <section class="row action-area" id="about">
-        <div class="left col">
+        <div class="left col-6 col-md-12">
           <div id="basic-info-area">
             <img src="Announcer.png" class="logo" />
            <h1>Kevin M. Smith</h1>
@@ -80,7 +86,7 @@
           <p>A highly enthusiastic Creative Digital Media student in Cork Institute of Technology with a dedication and drive to work. Proven ability to plan, organise and research along with the skills to put these into action from my work at MyFutprint Entertainment and from my independent graphic novels.</p>
           </div>
         </div>
-        <div class="right col" id="skills">
+        <div class="right col-6 col-md-12" id="skills">
           <h2>Skills:</h2> 
           <div id="skills-area">
             <div class="list-group">
@@ -134,18 +140,94 @@
 
       <section class="row action-area projects" id="projects">
         <div class="left col">
-          Test
-          <button onclick="flip()" style="margin-top: 100px;">1</button>
+          <div class="row">
+          <div class="media col-6">
+              <img src="images/projects/mm.png" alt="" class="media-object">
+              <h4>Maths Masters</h4>
+              <p class="project-links">
+                <a href="https://kevinthepirate.github.io/MathsMasters/" target="_blank" rel="noopener noreferrer">View</a>
+                /
+                <a href="https://github.com/KevinThePirate/MathsMasters" target="_blank" rel="noopener noreferrer">GitHub</a>
+              </p>
+              <p class="project-text">Maths Master was a project I created for my "Interactive Scripting" module in my 2nd Year of college. It's an educational maths game developed in vanilla JS based on the popular Pokemon franchise. It has four levels, a high-score system, and multiple player options. </p>
+          </div>
+          <div class="media col-6">
+            <img src="images/projects/lib.png" alt="" class="media-object">
+            <h4>Library Reading List</h4>
+            <p class="project-links">
+              <a href="https://kevinthepirate.github.io/Library/" target="_blank" rel="noopener noreferrer">View</a>
+              /
+              <a href="https://github.com/KevinThePirate/Library" target="_blank" rel="noopener noreferrer">GitHub</a>
+            </p>
+            <p class="project-text">I created a system where you can add, archive and filter books you own, books you have read or books you wish to read. This projected involved fine-tuning of animations, class management and the creation of new elements to create a dynamic web-app.</p>
+        </div>
+        </div>
         </div>
         <div class="right col">
+          
+          <div class="row">
+            <div class="media col-6">
+                <img src="images/projects/etch.png" alt="" class="media-object">
+                <h4>Etch-A-Sketch</h4>
+                <p class="project-links">
+                  <a href="https://kevinthepirate.github.io/Etch-A-Sketch//" target="_blank" rel="noopener noreferrer">View</a>
+                  /
+                  <a href="https://github.com/KevinThePirate/Etch-A-Sketch/" target="_blank" rel="noopener noreferrer">GitHub</a>
+                </p>
+                <p class="project-text">A graphical program designed around drawing via mouse inputs. It has several options in size, scope and colour allowing for user customisation.</p>
+            </div>
+            <div class="media col-6">
+              <img src="images/projects/tic.png" alt="" class="media-object">
+              <h4>Tic Tac Toe</h4>
+              <p class="project-links">
+                <a href="https://kevinthepirate.github.io/Tic-Tac-Toe/" target="_blank" rel="noopener noreferrer">View</a>
+                /
+                <a href="https://github.com/KevinThePirate/Tic-Tac-Toe" target="_blank" rel="noopener noreferrer">GitHub</a>
+              </p>
+              <p class="project-text">A two-player replica of the classic game, Tic Tac Toe based around further mastering JavaScript</p>
+          </div>
+          </div>
+          <div class="shadow-pop-tr flip-button">
+            <a class="carousel-control-next" href="#carouselExampleControls" role="button" onclick="flip()">Animation/Video <i class="fa fa-arrow-down"></i></a>
+          </div>
         </div>
       </section>
 
       <section class="row action-area projects" id="projects-back">
         <div class="left col">
-          Test
-          <button onclick="flip()" style="margin-top: 100px;">2</button></div>
-        <div class="right col"></div>
+          <div class="row">
+          <div class="media col-6">
+            <iframe src="https://www.youtube.com/embed/FdnyqjX7mMY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="col-12"></iframe>
+              <h4>A Mid Hero Academia Video</h4>
+              <p class="project-text">Freelance video editing for a client's YouTube channel, Craftsdwarf. I was in charge of sourcing all of the footage, editing the audio and editing those videos together with the narration along with preparing finishing touches like music and animations. </p>
+          </div>
+          <div class="media col-6">
+            <iframe src="https://www.youtube.com/embed/a611UqNy_6g" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="col-12"></iframe>
+            <h4>How The US Joined WW2</h4>
+            <p class="project-text">My final project for "Animation Principles" module where I received a first-class honour for demonstrating my ability to understand and utilise the fundamental building blocks of animation.</p>
+        </div>
+        </div>
+        </div>
+        <div class="right col">
+          
+          <div class="row">
+            <div class="media col-6">
+              <iframe class='col-12' src="https://www.youtube.com/embed/TfWKeEH3Cfc" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <h4>How Cameras Work</h4>
+                <br>
+                <p class="project-text">For my "Analog & Digital Devices" module, I had to create a 1-minute video explaining how cameras work while only using analog sources while keeping it visually engaging and fun to watch. This project also received a first-class hour and was commended for exemplifying the spirit of the module best in my course.</p>
+            </div>
+            <div class="media col-6">
+              <iframe class='col-12' src="https://www.youtube.com/embed/vL7L4Cu-TWU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              <h4>The Tiredness I Feel</h4>
+             <br>
+              <p class="project-text">For "AV Technology" my group had to create a visually interesting piece of video content. Having contacted a band to use their material we filmed our video at night and began stylizing the video in post with a neon-tint.</p>
+          </div>
+          </div>
+          <div class="shadow-pop-tr flip-button">
+            <a class="carousel-control-next" href="#carouselExampleControls" role="button" onclick="flip()">Web Development <i class="fa fa-arrow-up"></i></a>
+          </div>
+        </div>
       </section>
     </div>
   </div>
