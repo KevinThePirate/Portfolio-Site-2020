@@ -371,3 +371,21 @@ color: var(--button);
     padding-bottom: 0;
     margin-bottom: 0;
 }
+@media only screen and (max-width: 576px) {
+    .action-area > * {
+        padding-top: 10%;
+        height: 100vh;
+    }
+    .flip-button{
+        width: 35%;
+    }
+    #projects-back .flip-button{
+        bottom: 30px;
+    }
+    .left, .right{
+        padding: 10%;
+    }
+    .dropdown{
+        width: 350px;
+    }
+  }
